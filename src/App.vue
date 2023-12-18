@@ -48,7 +48,7 @@
     </v-navigation-drawer>
     <v-main>
       <v-container fluid>
-        <router-view/>  
+        <router-view/>
       </v-container>
     </v-main>
   </v-app>
@@ -65,6 +65,7 @@ export default {
           { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
           { title: 'Grid System', icon: 'mdi-view-dashboard', to: '/grid-system'},
           { title: 'Grid List Page', icon: 'mdi-view-dashboard', to: '/grid-list-page'},
+          { title: 'Breakpoints Page', icon: 'mdi-view-dashboard', to: '/breakpoints'},
         ],
         right: null,
   }),
