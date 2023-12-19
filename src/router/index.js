@@ -4,6 +4,8 @@ import Dashboard from "@/views/Dashboard.vue"
 import GridSystem from "@/views/GridSystem.vue"
 import GridListPage from "@/views/GridListPage.vue"
 import Breakpoints from "@/views/Breakpoints.vue"
+import NoGridListPage from "@/views/NoGridListPage.vue"
+import Typography from "@/views/Typography.vue"
 // import ErrorPage from "@/components/ErrorPage"
 // import Home from "@/components/Home"
 
@@ -34,6 +36,16 @@ const routes = [
       path: '/breakpoints',
       name: 'Breakpoints',
       component: Breakpoints
+  },
+  {
+    path: '/no-grid-list-page',
+    name: 'NoGridListPage',
+    component: NoGridListPage
+  },
+  {
+    path: '/typography',
+    name: 'Typography',
+    component: Typography
   },
 ]
 

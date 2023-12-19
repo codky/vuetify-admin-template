@@ -9,8 +9,8 @@
                 md="4"
                 lg="3"
             >
-                <v-card 
-                    class="pa-3" 
+                <v-card
+                    class="pa-3"
                     outlined
                 >
                     Col
@@ -21,9 +21,9 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style lang="">
-    
+
 </style>
