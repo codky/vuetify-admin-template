@@ -12,7 +12,21 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer
+      v-model="drawer"
+      dark
+      app
+      :src="require('@/assets/sidebar.jpg')"
+    >
+
+      <template
+        v-slot:img="props"
+      >
+        <v-img
+          :gradient="gradient"
+          v-bind="props"
+        />
+      </template>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -35,6 +49,8 @@
           :key="item.title"
           link
           :to="item.to"
+          active-class="primary"
+          class="py-1"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -61,13 +77,18 @@ export default {
 
   data: () => ({
     drawer: false,
+    gradient: 'rgba(0, 0, 0, 7), rgba(0, 0, 0, 7)',
     items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
           { title: 'Grid System', icon: 'mdi-view-dashboard', to: '/grid-system'},
           { title: 'Grid List Page', icon: 'mdi-view-dashboard', to: '/grid-list-page'},
           { title: 'Breakpoints Page', icon: 'mdi-view-dashboard', to: '/breakpoints'},
-          { title: 'No Grid List Page', icon: 'mdi-view-dashboard', to: '/no-grid-list-page'},
+          // { title: 'No Grid List Page', icon: 'mdi-view-dashboard', to: '/no-grid-list-page'},
           { title: 'Typography Page', icon: 'mdi-view-dashboard', to: '/typography'},
+          { title: 'Tables', icon: 'mdi-view-dashboard', to: '/tables'},
+          { title: 'Forms', icon: 'mdi-view-dashboard', to: '/forms'},
+          { title: 'Buttons', icon: 'mdi-view-dashboard', to: '/buttons'},
+          { title: 'Icons', icon: 'mdi-view-dashboard', to: '/icons'},
         ],
         right: null,
   }),

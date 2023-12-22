@@ -8,6 +8,11 @@ import NoGridListPage from "@/views/NoGridListPage.vue"
 import Typography from "@/views/Typography.vue"
 // import ErrorPage from "@/components/ErrorPage"
 // import Home from "@/components/Home"
+import Tables from "@/views/Tables.vue"
+import Forms from "@/views/Forms.vue"
+import Buttons from "@/views/Buttons.vue"
+import Icons from "@/views/Icons.vue"
+
 
 Vue.use(VueRouter)
 
@@ -36,17 +41,37 @@ const routes = [
       path: '/breakpoints',
       name: 'Breakpoints',
       component: Breakpoints
-  },
-  {
-    path: '/no-grid-list-page',
-    name: 'NoGridListPage',
-    component: NoGridListPage
-  },
-  {
-    path: '/typography',
-    name: 'Typography',
-    component: Typography
-  },
+    },
+    {
+      path: '/no-grid-list-page',
+      name: 'NoGridListPage',
+      component: NoGridListPage
+    },
+    {
+      path: '/typography',
+      name: 'Typography',
+      component: Typography
+    },
+    {
+      path: '/tables',
+      name: 'Tables',
+      component: Tables
+    },
+      {
+      path: '/forms',
+      name: 'Forms',
+      component: Forms
+    },
+    {
+      path: '/buttons',
+      name: 'Buttons',
+      component: Buttons
+    },
+    {
+      path: '/typography',
+      name: 'Icons',
+      component: Icons
+    },
 ]
 
 const router = new VueRouter({
