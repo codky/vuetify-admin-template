@@ -68,7 +68,7 @@ const routes = [
       component: Buttons
     },
     {
-      path: '/typography',
+      path: '/icons',
       name: 'Icons',
       component: Icons
     },
