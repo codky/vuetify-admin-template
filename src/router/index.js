@@ -34,11 +34,6 @@ const routes = [
             component: GridSystem
         },
         {
-            path: '/grid-system',
-            name: 'GridSystem',
-            component: GridSystem
-        },
-        {
             path: '/grid-list-page',
             name: 'GridListPage',
             component: GridListPage
